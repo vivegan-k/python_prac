@@ -1,14 +1,29 @@
-def selection_sort(list):
-    for fillslot in range(len(list)-1,0,-1):
-        maxpos = 0
-        for location in range(1, fillslot+1):
-            if list[location] > list[maxpos]:
-                maxpos = location
+def get_min_index(Array, start):
+    min_index = start
 
-            temp = list[location]
-            list[location] = list[maxpos]
-            list[maxpos] = temp
+    start += 1
 
-    return list
+    while start < len(Array):
+        if Array[start] < Array[min_index]:
+            min_index = start
+        start += 1
+    return min_index
 
-print selection_sort([3,4,1,5,2]) 
+
+
+def selection_sort(A):
+    i = 0
+
+    while i < len(A):
+        min_index = get_min_index(A, i)
+
+        if min_index != i:
+            A[i], A[min_index] = A[min_index], A[i]
+        i += 1
+    return  A
+
+
+A = [5, 2, 6, 7, 2, 1, 0, 3]
+
+print(selection_sort(A))
+

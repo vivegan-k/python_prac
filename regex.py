@@ -1,6 +1,6 @@
 import re
 
-number = '+91-94888 90877'
+number = '+91-12345 67890'
 
 num_pattern = re.compile("^(\D*)(\d{2})(\D*)(\d{5})(\D*)(\d{5})$")
 
