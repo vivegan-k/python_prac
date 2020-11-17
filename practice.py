@@ -51,4 +51,25 @@ def str_comp(s):
 print str_comp('abbbccd')
 print str_comp('aabbbccdd')
 
+def is_palindrome(s):
+  print s,
+  i = 0
+  j = len(s) - 1
 
+  while i < j:
+    while not s[i].isalnum() and i < j:
+      i += 1
+    while not s[j].isalnum() and i < j:
+      j -= 1
+
+    if s[i].lower() != s[j].lower():
+      return False
+    i += 1
+    j -= 1
+
+  return True
+ 
+
+print 'is_palindrome: %s' % is_palindrome('malayalam')
+print 'is_palindrome: %s' % is_palindrome('tamil')
+print 'is_palindrome: %s' % is_palindrome('Too hot to hoot.')

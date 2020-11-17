@@ -1,0 +1,6 @@
+INFO:vivekanandan.kannan:This is info message
+DEBUG:example.detail:This is debug message
+WARNING:example.detail:Warning!!!
+INFO:vivekanandan.kannan:This is info message
+DEBUG:example.detail:This is debug message
+WARNING:example.detail:Warning!!!
