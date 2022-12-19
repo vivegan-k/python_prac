@@ -10,5 +10,5 @@ z = 3
 
 pdb.set_trace()
 sum = add(y,z)
-print sum
-print x + y
+print(sum)
+print(x + y)

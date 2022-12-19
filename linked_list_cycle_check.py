@@ -1,11 +1,7 @@
 def cycle_check(node):
     fast, slow = node, node
-    print 'fast:', fast.value
-    print 'slow:', slow.value
     while fast and fast.nextnode:
         fast = fast.nextnode
-        print 'fast:', fast.value
-        print 'slow:', slow.value
         if fast == slow:
             return True
         fast = fast.nextnode

@@ -6,7 +6,7 @@ class Arithmatic:
         return self.a + self.b
     def subtract(self):
         return self.a - self.b
-    def multiply(self):
-        return self.a * self.b
+    def multiply(self, a, b):
+        return a * b
     def devide(self):
         return self.a / self.b
